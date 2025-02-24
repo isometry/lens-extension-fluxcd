@@ -10,7 +10,7 @@ const KubeObjectStore = Renderer.K8sApi.KubeObjectStore;
 export class HelmRelease extends KubeObject {
   static readonly kind = "HelmRelease";
   static readonly namespaced = true;
-  static readonly apiBase = "/apis/helm.toolkit.fluxcd.io/v2beta1/helmreleases";
+  static readonly apiBase = "/apis/helm.toolkit.fluxcd.io/v2/helmreleases";
 }
 
 export class HelmReleaseApi extends KubeApi<HelmRelease> {
